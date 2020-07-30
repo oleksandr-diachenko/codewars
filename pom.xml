@@ -10,16 +10,23 @@
 
     <properties>
         <java.version>11</java.version>
-        <junit.jupiter.version>5.2.0</junit.jupiter.version>
         <maven.compiler.plugin>3.8.1</maven.compiler.plugin>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <junit5>5.2.0</junit5>
+        <assertj>3.16.1</assertj>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.1.0</version>
+            <version>${junit5}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>${assertj}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
